@@ -1,0 +1,244 @@
+.answerBox {
+    display: flex;
+    width: 40rem;
+    height: 4rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: white;
+    border-width: 2px;
+    border-radius: .375rem;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    margin: auto;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.answerBox:hover {
+    background-color: #312E81;
+    color: white;
+    border: 2px solid white;
+}
+
+.answerSelected {
+    display: flex;
+    width: 40rem;
+    height: 4rem;
+    border: 2px solid white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: #312E81;
+    color: white;
+    border-width: 2px;
+    border-radius: .375rem;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    margin: auto;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.answerContent {
+    font-weight: 500;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.btnBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+.btnStart,
+.btnPrevious {
+    background-color: #6ee7b7;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    width: 120px;
+    margin-top: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.btnStart:hover {
+    background-color: #187724;
+    color: white;
+}
+
+.btnPrevious {
+    background-color: gray;
+    color: white;
+}
+
+.btnPrevious:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.btnDisabled {
+    background-color: lightgray;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    width: 120px;
+    margin-top: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.btnSubRes {
+    background-color: #F59E0B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    width: 120px;
+    margin-top: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btnSubRes:hover {
+    background-color: #ecb960;
+}
+
+.btnReview {
+    background-color: rgb(250, 58, 58);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    width: 120px;
+    margin-top: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.btnReview:hover {
+    background-color: rgb(253, 106, 106);
+}
+
+.countdown {
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    color: #312E81;
+    border: 8px solid #312E81;
+    border-radius: 9999px;
+    position: absolute;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+    left: 45%;
+    top: -20%;
+}
+
+.countdownReview {
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    color: red;
+    border-radius: 9999px;
+    position: absolute;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+    left: 45%;
+    top: -20%;
+}
+
+.customContainer {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.questionBox {
+    width: 45rem;
+    height: 14rem;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
+    padding-top: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    border-radius: .375rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.questionContent {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+
+}
+
+.questionOrder {
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    color: #312E81;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.resultContent{
+    color: white;
+    font-size: 1.875rem;
+    font-weight: inherit;
+    line-height: 2.25rem;
+}
+
+.reviewBox {
+    display: flex;
+    width: 40rem;
+    height: 4rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: white;
+    border-width: 2px;
+    border-radius: .375rem;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    margin: auto;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.reviewCorrect {
+    background-color: rgb(100, 190, 100);
+    color: white;
+    border: 2px solid white;
+}
+
+.reviewIncorrect {
+    background-color: rgb(255, 56, 56);
+    color: white;
+    border: 2px solid white;
+}
